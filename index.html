@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>East Hill Payment Solutions | Certified Clover · Moneris · Square Dealer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a href="tel:+14375001212">📞 437-500-1212</a>
+      <div class="topbar-right">
+        <a href="#contact">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">East Hill Payment</span>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li class="has-dropdown">
+          <a href="#">Solutions <span class="chevron">›</span></a>
+          <div class="dropdown">
+            <a href="#solutions"><span class="dd-icon">🏪</span> In-Store Payments</a>
+            <a href="#solutions"><span class="dd-icon">🌐</span> Online Payments</a>
+            <a href="#solutions"><span class="dd-icon">🛒</span> E-Commerce</a>
+            <a href="#solutions"><span class="dd-icon">💻</span> Virtual Terminal</a>
+            <a href="#solutions"><span class="dd-icon">💰</span> Business Financing</a>
+          </div>
+        </li>
+        <li class="has-dropdown">
+          <a href="#">POS Systems <span class="chevron">›</span></a>
+          <div class="dropdown">
+            <a href="clover.html"><img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Clover_mobile_app_Logo.svg" alt="Clover" class="dd-icon" /> Clover</a>
+            <a href="moneris.html"><img src="https://upload.wikimedia.org/wikipedia/en/4/48/Moneris_Solutions_logo.png" alt="Moneris" class="dd-icon" /> Moneris</a>
+            <a href="square.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Square%2C_Inc._logo.svg/1280px-Square%2C_Inc._logo.svg.png" alt="Square" class="dd-icon" /> Square</a>
+          </div>
+        </li>
+        <li><a href="#industries">Industries</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+
+      <a href="#contact" class="nav-cta">Get Started</a>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">✕</button>
+    <ul>
+      <li><a href="#solutions" onclick="closeMobile()">Solutions</a></li>
+      <li><a href="#pos" onclick="closeMobile()">POS Systems</a></li>
+      <li><a href="#industries" onclick="closeMobile()">Industries</a></li>
+      <li><a href="#about" onclick="closeMobile()">About Us</a></li>
+      <li><a href="#contact" class="mobile-cta" onclick="closeMobile()">Get Started</a></li>
+    </ul>
+  </div>
+  <div class="mobile-overlay" id="mobileOverlay" onclick="closeMobile()"></div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-orb orb1"></div>
+      <div class="hero-orb orb2"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-badge">🏆 Certified Dealer — Clover · Moneris · Square</div>
+        <h1 class="hero-headline">
+          <span class="headline-line accent">Smarter Payments</span>
+          <span class="headline-line accent">For Canadian</span>
+          <span class="headline-line accent">Businesses</span>
+        </h1>
+        <p class="hero-sub">We give businesses a wide range of payment solutions — from powerful POS terminals to seamless e-commerce. Guaranteed lowest rates.</strong></p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">Request Free Consultation</a>
+          <a href="#pos" class="btn-ghost">View POS Systems</a>
+        </div>
+        <div class="payment-logos">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Visa_Inc._logo_%282021%E2%80%93present%29.svg/1280px-Visa_Inc._logo_%282021%E2%80%93present%29.svg.png" alt="Visa" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/1280px-MasterCard_Logo.svg.png" alt="Mastercard" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/American_Express_logo_%282018%29.svg/1280px-American_Express_logo_%282018%29.svg.png" alt="Amex" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Apple_Pay_logo.svg/1280px-Apple_Pay_logo.svg.png" alt="Apple Pay" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Google_Pay_Logo.svg/1280px-Google_Pay_Logo.svg.png" alt="Google Pay" />
+          <span class="pay-label">& more</span>
+        </div>
+      </div>
+      <div class="hero-form-wrap">
+        <div class="hero-form-card">
+          <h3>Get a Free Quote</h3>
+          <p>See how much you could save today</p>
+          <form class="hero-form" onsubmit="submitForm(event, 'formSuccess', 'https://formspree.io/f/easthillpayment@gmail.com')">
+            <div class="form-group">
+              <label>Business Name</label>
+              <input type="text" placeholder="Your Business Name" required />
+            </div>
+            <div class="form-group">
+              <label>Contact Name</label>
+              <input type="text" placeholder="Your Full Name" required />
+            </div>
+            <div class="form-group">
+              <label>Phone</label>
+              <input type="tel" placeholder="(xxx) xxx-xxxx" required />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="you@business.com" required />
+            </div>
+            <button type="submit" class="form-btn">
+              <span class="btn-text">Send My Free Quote →</span>
+              <span class="btn-loader" style="display:none">Sending…</span>
+            </button>
+          </form>
+          <div class="form-success" id="formSuccess" style="display:none">
+            <div class="success-icon">✓</div>
+            <h4>Thanks! We'll be in touch shortly.</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES STRIP -->
+  <section class="industries-strip" id="industries">
+    <div class="container">
+      <p class="strip-label">Solutions for every industry</p>
+      <div class="industry-icons">
+        <div class="ind-item"><span>🏪</span><small>Retail</small></div>
+        <div class="ind-item"><span>🍽️</span><small>Restaurant</small></div>
+        <div class="ind-item"><span>🏨</span><small>Lodging</small></div>
+        <div class="ind-item"><span>🔧</span><small>Trades</small></div>
+        <div class="ind-item"><span>🚗</span><small>Auto & Taxi</small></div>
+        <div class="ind-item"><span>⚕️</span><small>Healthcare</small></div>
+        <div class="ind-item"><span>🎓</span><small>Education</small></div>
+        <div class="ind-item"><span>💼</span><small>Professional</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POS TERMINALS -->
+  <section class="pos-section" id="pos">
+    <div class="container">
+      <div class="section-header light">
+        <span class="tag tag--dark">POS Terminals</span>
+        <h2>Industry-Leading Hardware</h2>
+        <p>We are certified dealers of Canada's most trusted POS brands.</p>
+      </div>
+      <div class="pos-grid">
+
+        <div class="pos-card">
+          <div class="pos-brand-bar clover-bar">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Clover_mobile_app_Logo.svg" alt="Clover" class="pos-logo" />
+            <span class="certified-badge">✓ Certified Dealer</span>
+          </div>
+          <div class="pos-body">
+            <div class="pos-terminal-img clover-img">
+              <div class="terminal-mockup green">
+                <div class="tm-screen"></div>
+                <div class="tm-base"></div>
+              </div>
+            </div>
+            <p>The all-in-one smart POS system. Powerful apps, detailed analytics, and beautiful hardware for every business type.</p>
+            <ul class="pos-features">
+              <li>✓ Clover Station, Mini & Flex</li>
+              <li>✓ App market with 300+ integrations</li>
+              <li>✓ Built-in loyalty programs</li>
+              <li>✓ Real-time reporting</li>
+            </ul>
+            <a href="clover.html" class="btn-outline">Get Clover →</a>
+          </div>
+        </div>
+
+        <div class="pos-card">
+          <div class="pos-brand-bar moneris-bar">
+            <img src="https://upload.wikimedia.org/wikipedia/en/4/48/Moneris_Solutions_logo.png" alt="Moneris" class="pos-logo" />
+            <span class="certified-badge">✓ Certified Dealer by Payroc</span>
+          </div>
+          <div class="pos-body">
+            <div class="pos-terminal-img">
+              <div class="terminal-mockup red">
+                <div class="tm-screen"></div>
+                <div class="tm-base"></div>
+              </div>
+            </div>
+            <p>Canada's #1 payment processor. Trusted by over 350,000 businesses nationwide with industry-leading security and support.</p>
+            <ul class="pos-features">
+              <li>✓ Moneris Go, Move & Core terminals</li>
+              <li>✓ Interac Flash & tap-to-pay</li>
+              <li>✓ 24/7 Canadian support</li>
+              <li>✓ Next-day deposits</li>
+            </ul>
+            <a href="moneris.html" class="btn-outline">Get Moneris →</a>
+          </div>
+        </div>
+
+        <div class="pos-card">
+          <div class="pos-brand-bar square-bar">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Square%2C_Inc._logo.svg/1280px-Square%2C_Inc._logo.svg.png" alt="Square" class="pos-logo square-logo" />
+            <span class="certified-badge">✓ Certified Dealer by Payroc</span>
+          </div>
+          <div class="pos-body">
+            <div class="pos-terminal-img">
+              <div class="terminal-mockup dark">
+                <div class="tm-screen"></div>
+                <div class="tm-base"></div>
+              </div>
+            </div>
+            <p>Simple, transparent pricing with no monthly fees. Perfect for small businesses and startups looking to get up and running fast.</p>
+            <ul class="pos-features">
+              <li>✓ Square Terminal & Register</li>
+              <li>✓ Free online store included</li>
+              <li>✓ Transparent flat-rate pricing</li>
+              <li>✓ Instant setup & activation</li>
+            </ul>
+            <a href="square.html" class="btn-outline">Get Square →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="why-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Why East Hill Payment</span>
+        <h2>It's not just about accepting payments.</h2>
+        <p>We offer a seamless, best-in-class experience — because your business deserves more than a terminal.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">💲</div>
+          <h4>Transparent Pricing</h4>
+          <p>Guaranteed lowest processing rates. If we can't beat your current rate, we give you $500.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🛡️</div>
+          <h4>24/7 Support</h4>
+          <p>Canadian-based support team available around the clock. Stress-free setup and ongoing help.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">📊</div>
+          <h4>Real-Time Reporting</h4>
+          <p>Track transactions, view analytics, and access your business data from anywhere, anytime.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">⚡</div>
+          <h4>Next-Day Deposits</h4>
+          <p>Reliable, fast deposits directly to your bank account — as fast as the next business day.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🍁</div>
+          <h4>Canadian Owned</h4>
+          <p>Proudly rooted in the Canadian economy, serving local businesses from coast to coast.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">📦</div>
+          <h4>All-In-One Solutions</h4>
+          <p>One partner for hardware, software, payments, e-commerce, and business financing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUARANTEE BANNER -->
+  <section class="guarantee-banner">
+    <div class="container">
+      <div class="guarantee-inner">
+        <div class="guarantee-text">
+          <h2>Lower Your Rates — Guaranteed.</h2>
+          <p>We'll beat your current processing rate. No risk. No hidden fees. Just results.</p>
+        </div>
+        <a href="#contact" class="btn-primary btn-large">Claim Your Free Analysis →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="tag">Contact Us</span>
+          <h2>Let's Find the Right Solution for Your Business</h2>
+          <p>Our payment specialists are ready to help. Reach out and get a free consultation with no obligations.</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <span class="ci-icon">📞</span>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:+14375001212">437-500-1212</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="ci-icon">✉️</span>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:easthillpayment@gmail.com">easthillpayment@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="ci-icon">📍</span>
+              <div>
+                <strong>Location</strong>
+                <span>Toronto, Ontario, Canada</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <form class="contact-form" onsubmit="submitContact(event, 'https://formspree.io/f/easthillpayment@gmail.com')">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Business Name</label>
+                <input name="Business Name" type="text" placeholder="Your Business" required />
+              </div>
+              <div class="form-group">
+                <label>Contact Name</label>
+                <input name="Contact Name" type="text" placeholder="Full Name" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Phone</label>
+                <input name="Phone" type="tel" placeholder="(xxx) xxx-xxxx" required />
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input name="Email" type="email" placeholder="you@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>What are you looking for?</label>
+              <select name="Inquiry Type">
+                <option value="">Select a solution...</option>
+                <option>In-Store POS System</option>
+                <option>Online / E-Commerce Payments</option>
+                <option>Virtual Terminal</option>
+                <option>Business Financing</option>
+                <option>Rate Comparison</option>
+                <option>General Inquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Message (Optional)</label>
+              <textarea name="Message" rows="4" placeholder="Tell us about your business..."></textarea>
+            </div>
+            <button type="submit" class="form-btn full-width">Send Message →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo footer-logo">
+            <span class="logo-icon">⚡</span>
+            <span class="logo-text">East Hill Payment</span>
+          </a>
+          <p>Helping Canadian businesses accept payments and thrive in the modern economy. Certified Clover, Moneris & Square dealer.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">in</a>
+            <a href="#" aria-label="LinkedIn">li</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Solutions</h5>
+          <ul>
+            <li><a href="#solutions">In-Store Payments</a></li>
+            <li><a href="#solutions">Online Payments</a></li>
+            <li><a href="#solutions">E-Commerce</a></li>
+            <li><a href="#solutions">Virtual Terminal</a></li>
+            <li><a href="#solutions">Business Financing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>POS Systems</h5>
+          <ul>
+            <li><a href="clover.html">Clover</a></li>
+            <li><a href="moneris.html">Moneris</a></li>
+            <li><a href="square.html">Square</a></li>
+          </ul>
+          <h5 style="margin-top:1.5rem">Company</h5>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Get In Touch</h5>
+          <ul class="footer-contact">
+            <li>📞 <a href="tel:+14375001212">437-500-1212</a></li>
+            <li>✉️ <a href="mailto:easthillpayment@gmail.com">easthillpayment@gmail.com</a></li>
+            <li>📍 Toronto, Ontario</li>
+          </ul>
+          <a href="#contact" class="btn-primary footer-cta">Free Consultation</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 East Hill Payment Solutions Inc. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <p class="footer-disclaimer">East Hill Payment Solutions operates as an authorized Independent Sales Organization (ISO). The Clover name and logo are registered trademarks of Clover Network, LLC. Moneris is a registered trademark of Moneris Solutions Corporation. Square is a registered trad

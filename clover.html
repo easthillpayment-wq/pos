@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clover POS Systems in Canada | East Hill Payment Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="clover.css" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a href="tel:+14375001212">📞 437-500-1212</a>
+      <div class="topbar-right">
+        <a href="index.html#contact">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">East Hill Payment</span>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li class="has-dropdown">
+          <a href="#">Solutions <span class="chevron">›</span></a>
+          <div class="dropdown">
+            <a href="index.html#solutions"><span class="dd-icon">🏪</span> In-Store Payments</a>
+            <a href="index.html#solutions"><span class="dd-icon">🌐</span> Online Payments</a>
+            <a href="index.html#solutions"><span class="dd-icon">🛒</span> E-Commerce</a>
+            <a href="index.html#solutions"><span class="dd-icon">💻</span> Virtual Terminal</a>
+            <a href="index.html#solutions"><span class="dd-icon">💰</span> Business Financing</a>
+          </div>
+        </li>
+        <li class="has-dropdown">
+          <a href="#" class="nav-active">POS Systems <span class="chevron">›</span></a>
+          <div class="dropdown">
+            <a href="clover.html"><span class="dd-icon">🍀</span> Clover POS</a>
+            <a href="index.html#pos"><span class="dd-icon">🍁</span> Moneris</a>
+            <a href="index.html#pos"><span class="dd-icon">⬛</span> Square</a>
+          </div>
+        </li>
+        <li><a href="index.html#industries">Industries</a></li>
+        <li><a href="index.html#about">About Us</a></li>
+      </ul>
+
+      <a href="index.html#contact" class="nav-cta">Get Started</a>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">✕</button>
+    <ul>
+      <li><a href="index.html#solutions" onclick="closeMobile()">Solutions</a></li>
+      <li><a href="clover.html" onclick="closeMobile()">Clover POS</a></li>
+      <li><a href="index.html#pos" onclick="closeMobile()">All POS Systems</a></li>
+      <li><a href="index.html#about" onclick="closeMobile()">About Us</a></li>
+      <li><a href="index.html#contact" class="mobile-cta" onclick="closeMobile()">Get Started</a></li>
+    </ul>
+  </div>
+  <div class="mobile-overlay" id="mobileOverlay" onclick="closeMobile()"></div>
+
+  <!-- ============================================================
+       HERO — Clover
+  ============================================================ -->
+  <section class="clover-hero">
+    <div class="clover-hero-bg">
+      <div class="ch-orb ch-orb1"></div>
+      <div class="ch-orb ch-orb2"></div>
+      <div class="ch-grid"></div>
+    </div>
+    <div class="clover-hero-inner container">
+      <div class="ch-text">
+        <div class="clover-badge">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Clover_mobile_app_Logo.svg" alt="Clover" class="ch-badge-logo" />
+          <span>Certified Dealer</span>
+        </div>
+        <h1>Discover Clover<br /><span class="ch-accent">Payment Terminals</span></h1>
+        <p>Clover POS systems and terminals are among the best for any business. From the counter to the field, Clover keeps you running faster than ever.</p>
+        <div class="ch-actions">
+          <a href="#devices" class="btn-primary">Explore Devices</a>
+          <a href="index.html#contact" class="btn-ghost">Request a Demo</a>
+        </div>
+      </div>
+      <div class="ch-hero-image"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       DEVICE OVERVIEW STRIP
+  ============================================================ -->
+  <section class="device-strip">
+    <div class="container">
+      <p class="strip-label">Choose your Clover device</p>
+      <div class="device-tabs">
+        <button class="dtab active" onclick="scrollToDevice('flex')">Clover Flex</button>
+        <button class="dtab" onclick="scrollToDevice('flex-pocket')">Clover Flex Pocket</button>
+        <button class="dtab" onclick="scrollToDevice('mini')">Clover Mini</button>
+        <button class="dtab" onclick="scrollToDevice('station')">Clover Station Duo</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION INTRO
+  ============================================================ -->
+  <section class="clover-intro">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Best-in-Class Hardware</span>
+        <h2>Clover POS systems and terminals<br />are among the best for any business</h2>
+        <p>Whether you're running a retail store, restaurant, or mobile service — there's a Clover device built for you. As certified dealers, East Hill Payment ensures you get the best hardware at the best rates.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       DEVICE 1 — CLOVER FLEX
+  ============================================================ -->
+  <section class="device-section" id="flex">
+    <div class="container">
+      <div class="device-hero-block">
+        <div class="dhb-text">
+          <div class="device-label">Mobile POS</div>
+          <h2 class="device-name">Clover Flex</h2>
+          <p class="device-tagline">Run your business wherever you go with Clover Flex, the most portable and powerful POS available.</p>
+          <ul class="device-bullets">
+            <li>✓ Get all you need, all from one POS. Packing portable power with a 6" touchscreen, built-in printer, camera and barcode scanner for payments, tableside ordering and even inventory.</li>
+            <li>✓ Take more payments from more places. Swipe, dip, tap, and take contactless payments wherever you do business.</li>
+            <li>✓ Works well with others or alone. Run your whole business or pair with other Clover devices to create a complete location solution with this handheld POS.</li>
+          </ul>
+          <a href="index.html#contact" class="btn-primary">Get Clover Flex →</a>
+        </div>
+        <div class="dhb-visual flex-visual">
+          <img src="picture/clover flex.jpg" alt="Clover Flex" class="clover-flex-img" />
+        </div>
+      </div>
+
+      <!-- Flex Detail Panels -->
+      <div class="detail-panels">
+        <div class="dp-panel product-detail-panel">
+          <div class="dp-content">
+            <div class="dp-tag">Product Details</div>
+            <h3>Gain real‑time insights with robust reporting</h3>
+            <div class="pd-list">
+              <p><strong>Monitor sales anywhere</strong> Access your sales data and key business metrics from your computer or mobile device.</p>
+              <p><strong>Oversee your inventory</strong> Use categories, labels, modifiers, and variants to keep your inventory organized and up-to-date.</p>
+              <p><strong>Track your team's performance</strong> Assess employee performance, manage schedules and timesheets, and set permission levels to oversee your team.</p>
+            </div>
+          </div>
+          <div class="dp-visual">
+            <img src="picture/clover flex product detail.jpg" alt="Clover Flex product details" class="product-detail-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       DEVICE 2 — CLOVER FLEX POCKET
+  ============================================================ -->
+  <section class="device-section" id="flex-pocket">
+    <div class="container">
+      <div class="device-hero-block">
+        <div class="dhb-text">
+          <div class="device-label">Lightweight Mobile POS</div>
+          <h2 class="device-name">Clover Flex Pocket</h2>
+          <p class="device-tagline">Gain real‑time insights with robust reporting.<br />Monitor sales anywhere.</p>
+          <ul class="device-bullets">
+            <li>✓ Access your sales data and key business metrics from your computer or mobile device.</li>
+            <li>✓ Oversee your inventory.</li>
+            <li>✓ Use categories, labels, modifiers, and variants to keep your inventory organized and up-to-date.</li>
+            <li>✓ Track your team's performance.</li>
+            <li>✓ Assess employee performance, manage schedules and timesheets, and set permission levels to oversee your team.</li>
+          </ul>
+          <a href="index.html#contact" class="btn-primary">Get Clover Flex Pocket →</a>
+        </div>
+        <div class="dhb-visual flex-visual">
+          <img src="picture/clover flex pocket.jpg" alt="Clover Flex Pocket" class="clover-flex-pocket-img" />
+        </div>
+      </div>
+
+      <!-- Flex Pocket Detail Panels -->
+      <div class="detail-panels">
+        <div class="dp-panel product-detail-panel">
+          <div class="dp-content">
+            <div class="dp-tag">Product Details</div>
+            <h3>Product details</h3>
+            <div class="pd-list">
+              <p><strong>Payments:</strong> Accept swipe, dip, tap, and contactless payments, including Apple Pay®, Google Pay® and Samsung Pay®.</p>
+              <p><strong>Screen:</strong> 5.99" LCD color touch screen.</p>
+              <p><strong>Security:</strong> Clover Security end-to-end encryption.</p>
+              <p><strong>Camera &amp; Scanner:</strong> 1D/2D barcode scanner/camera.</p>
+              <p><strong>Connectivity:</strong> WiFi, LTE.</p>
+              <p><strong>Battery Life:</strong> At least 8 hours of use on average (USB-C charging).</p>
+            </div>
+          </div>
+          <div class="dp-visual">
+            <img src="picture/clover flex pocket product detail.jpg" alt="Clover Flex Pocket product details" class="product-detail-img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       DEVICE 3 — CLOVER MINI
+  ============================================================ -->
+  <section class="device-section device-section--alt" id="mini">
+    <div class="container">
+      <div class="device-hero-block">
+        <div class="dhb-visual mini-visual">
+          <img src="picture/clover mini.jpg" alt="Clover Mini" class="clover-mini-img" />
+        </div>
+        <div class="dhb-text">
+          <div class="device-label">Counter POS</div>
+          <h2 class="device-name">Clover Mini</h2>
+          <p class="device-tagline">The all-in-one Clover Mini POS system for any business. Everything you need, at your fingertips — a powerful, space-saving countertop terminal that never skips a beat.</p>
+          <ul class="device-bullets">
+            <li>✓ The all-in-one Clover Mini POS system for any business.</li>
+            <li>✓ Everything you need, at your fingertips.</li>
+            <li>✓ 7" high-resolution touch display</li>
+            <li>✓ Built-in receipt printer &amp; barcode scanner</li>
+          </ul>
+          <a href="index.html#contact" class="btn-primary">Get Clover Mini →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       DEVICE 4 — CLOVER STATION DUO
+  ============================================================ -->
+  <section class="device-section" id="station">
+    <div class="container">
+      <div class="device-hero-block">
+        <div class="dhb-text">
+          <div class="device-label">Full Station</div>
+          <h2 class="device-name">Clover Station Duo</h2>
+          <p class="device-tagline">Streamlined operations for busy business environments. The Clover Station Duo features a merchant-facing display and a customer-facing screen — the full power of Clover in one elegant station.</p>
+          <ul class="device-bullets">
+            <li>✓ Streamlined operations for any volume.</li>
+            <li>✓ Increase retention through loyalty and rewards.</li>
+            <li>✓ Dual-screen: merchant + customer-facing display</li>
+            <li>✓ High-speed receipt printer included</li>
+          </ul>
+          <a href="index.html#contact" class="btn-primary">Get Station Duo →</a>
+        </div>
+        <div class="dhb-visual station-visual">
+          <img src="picture/clover station duo.jpg" alt="Clover Station Duo" class="clover-station-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       DEVICE COMPARISON
+  ============================================================ -->
+  <section class="compare-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Device Comparison</span>
+        <h2>Find the Right Clover for You</h2>
+        <p>Compare devices side-by-side to find the perfect fit for your business.</p>
+      </div>
+      <div class="compare-wrap">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th><span class="th-name">Clover Flex</span><span class="th-sub">Mobile POS</span></th>
+              <th><span class="th-name">Flex Pocket</span><span class="th-sub">Lightweight</span></th>
+              <th class="th-featured"><span class="th-name">Clover Mini</span><span class="th-sub">Counter POS</span></th>
+              <th><span class="th-name">Station Duo</span><span class="th-sub">Full Station</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Built-In Screen</td>
+              <td class="yes">✓</td>
+              <td class="yes">✓</td>
+              <td class="yes featured">✓</td>
+              <td class="yes">✓ Dual</td>
+            </tr>
+            <tr>
+              <td>Receipt Printer</td>
+              <td class="yes">✓</td>
+              <td class="no">—</td>
+              <td class="yes featured">✓</td>
+              <td class="yes">✓</td>
+            </tr>
+            <tr>
+              <td>LTE Connectivity</td>
+              <td class="yes">✓</td>
+              <td class="yes">✓</td>
+              <td class="no featured">—</td>
+              <td class="no">—</td>
+            </tr>
+            <tr>
+              <td>Wi-Fi</td>
+              <td class="yes">✓</td>
+              <td class="yes">✓</td>
+              <td class="yes featured">✓</td>
+              <td class="yes">✓</td>
+            </tr>
+            <tr>
+              <td>Tap / Chip / Swipe</td>
+              <td class="yes">✓</td>
+              <td class="yes">✓</td>
+              <td class="yes featured">✓</td>
+              <td class="yes">✓</td>
+            </tr>
+            <tr>
+              <td>Digital Wallets</td>
+              <td class="yes">✓</td>
+              <td class="yes">✓</td>
+              <td class="yes featured">✓</td>
+              <td class="yes">✓</td>
+            </tr>
+            <tr>
+              <td>Barcode Scanning</td>
+              <td class="yes">✓</td>
+              <td class="yes">✓</td>
+              <td class="yes featured">✓</td>
+              <td class="yes">✓</td>
+            </tr>
+            <tr>
+              <td>Digital Receipts</td>
+              <td class="no">—</td>
+              <td class="yes">✓</td>
+              <td class="no featured">—</td>
+              <td class="no">—</td>
+            </tr>
+            <tr>
+              <td>Inventory Management</td>
+              <td class="yes">✓</td>
+              <td class="yes">✓</td>
+              <td class="yes featured">✓</td>
+              <td class="yes">✓</td>
+            </tr>
+            <tr>
+              <td>Clover App Market</td>
+              <td class="yes">✓</td>
+              <td class="yes">✓</td>
+              <td class="yes featured">✓</td>
+              <td class="yes">✓</td>
+            </tr>
+            <tr>
+              <td>Loyalty Programs</td>
+              <td class="yes">✓</td>
+              <td class="yes">✓</td>
+              <td class="yes featured">✓</td>
+              <td class="yes">✓</td>
+            </tr>
+            <tr>
+              <td>Best For</td>
+              <td>Mobile &amp; field</td>
+              <td>Lightweight mobile</td>
+              <td class="featured">Retail &amp; restaurants</td>
+              <td>High-volume stores</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WHY SWIFTPAY FOR CLOVER
+  ============================================================ -->
+  <section class="why-clover-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Why Buy Through East Hill Payment</span>
+        <h2>More Than Just a Clover Dealer</h2>
+        <p>As certified Clover partners, we offer exclusive advantages you won't find going directly to Clover.</p>
+      </div>
+      <div class="wc-grid">
+        <div class="wc-card">
+          <div class="wc-icon">💲</div>
+          <h4>Lowest Rate Guarantee</h4>
+          <p>We beat your current processing rate — No risk whatsoever.</p>
+        </div>
+        <div class="wc-card">
+          <div class="wc-icon">🚀</div>
+          <h4>Same-Day Setup</h4>
+          <p>Our technicians handle the full setup and configuration. You'll be taking payments the same day.</p>
+        </div>
+        <div class="wc-card">
+          <div class="wc-icon">🎓</div>
+          <h4>Staff Training Included</h4>
+          <p>We train your team on every feature of your Clover device — no extra charge.</p>
+        </div>
+        <div class="wc-card">
+          <div class="wc-icon">🛎️</div>
+          <h4>Dedicated Account Manager</h4>
+          <p>One point of contact for all your needs — not a call centre. A real person who knows your business.</p>
+        </div>
+        <div class="wc-card">
+          <div class="wc-icon">⚡</div>
+          <h4>Next-Day Deposits</h4>
+          <p>Funds land in your account as fast as the next business day — keep your cash flow healthy.</p>
+        </div>
+        <div class="wc-card">
+          <div class="wc-icon">🍁</div>
+          <h4>Canadian Support</h4>
+          <p>24/7 Canadian-based support. Call, email, or text — we're always here when you need us.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA BANNER
+  ============================================================ -->
+  <section class="clover-cta-banner">
+    <div class="container">
+      <div class="ccb-inner">
+        <div class="ccb-text">
+          <h2>#Futureproofyourbusiness<br />With Clover POS</h2>
+          <p>Join thousands of Canadian businesses already running on Clover with East Hill Payment. Get started today — consultation is completely free.</p>
+        </div>
+        <div class="ccb-actions">
+          <a href="index.html#contact" class="btn-primary btn-large">Get Started Today →</a>
+          <a href="tel:+14375001212" class="btn-ghost">📞 Call Us Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo footer-logo">
+            <span class="logo-icon">⚡</span>
+            <span class="logo-text">East Hill Payment</span>
+          </a>
+          <p>Helping Canadian businesses accept payments and thrive in the modern economy. Certified Clover, Moneris &amp; Square dealer.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">in</a>
+            <a href="#" aria-label="LinkedIn">li</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Solutions</h5>
+          <ul>
+            <li><a href="index.html#solutions">In-Store Payments</a></li>
+            <li><a href="index.html#solutions">Online Payments</a></li>
+            <li><a href="index.html#solutions">E-Commerce</a></li>
+            <li><a href="index.html#solutions">Virtual Terminal</a></li>
+            <li><a href="index.html#solutions">Business Financing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>POS Systems</h5>
+          <ul>
+            <li><a href="clover.html">Clover POS</a></li>
+            <li><a href="index.html#pos">Moneris</a></li>
+            <li><a href="index.html#pos">Square</a></li>
+          </ul>
+          <h5 style="margin-top:1.5rem">Clover Devices</h5>
+          <ul>
+            <li><a href="#flex">Clover Flex</a></li>
+            <li><a href="#flex-pocket">Clover Flex Pocket</a></li>
+            <li><a href="#mini">Clover Mini</a></li>
+            <li><a href="#station">Clover Station Duo</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Get In Touch</h5>
+          <ul class="footer-contact">
+            <li>📞 <a href="tel:+14375001212">437-500-1212</a></li>
+            <li>✉️ <a href="mailto:easthillpayment@gmail.com">easthillpayment@gmail.com</a></li>
+            <li>📍 Toronto, Ontario</li>
+          </ul>
+          <a href="index.html#contact" class="btn-primary footer-cta">Free Consultation</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 East Hill Payment Solutions Inc. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <p class="footer-disclaimer">East Hill Payment Solutions operates as an authorized Independent Sales Organization (ISO) and certified Clover dealer. The Clover name and logo are registered trademarks owned by Clover Network, LLC, also utilized by Fiserv Canada Ltd. All trademarks are the property of their respective owners.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="index.html#contact" class="floating-cta" id="floatingCta">💬 Get Clover</a>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+  <script>
+    // Device tab scroll
+    function scrollToDevice(id) {
+      const el = document.getElementById(id);
+      if (el) {
+        const top = el.getBoundingClientRect().top + window.scrollY - 90;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+      document.querySelectorAll('.dtab').forEach(t => t.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+
+    // Highlight active tab on scroll
+    const deviceIds = ['flex','flex-pocket','mini','station'];
+    const tabObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const idx = deviceIds.indexOf(entry.target.id);
+          if (idx > -1) {
+            document.querySelectorAll('.dtab').forEach((t,i) => {
+              t.classList.toggle('active', i === idx);
+            });
+          }
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+
+    deviceIds.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) tabObserver.observe(el);
+    });
+  </script>
+</body>
+</html>
+     
